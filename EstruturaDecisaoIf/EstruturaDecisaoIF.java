@@ -20,7 +20,7 @@ public class EstruturaDecisaoIF {
         }
         
         boolean produtoAltoValor2 = precoProduto >=200;
-        double percentualDesconto2 = 0.0;
+        double percentualDesconto2 = 0.0;   
         if (produtoAltoValor2) {// Estrutura de decisão if
             // Desconto para produtos de alto valor.
             percentualDesconto = 10.0;
