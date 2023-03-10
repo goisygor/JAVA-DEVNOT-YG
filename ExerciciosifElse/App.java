@@ -10,8 +10,15 @@ public class App { public static void main(String[] args) {
     //Exercicios objeto3 = new Exercicios();
     //objeto3.exercicio3();
 
-    Exercicios objeto4 = new Exercicios();
-    objeto4.exercicio4();
+    //Exercicios objeto4 = new Exercicios();
+    //objeto4.exercicio4();
+
+    //Exercicios objeto5 = new Exercicios();
+    //objeto5.exercicio5();
+
+
+    Exercicios objeto6 = new Exercicios();
+    objeto6.exercicio6();
 }
     
 }

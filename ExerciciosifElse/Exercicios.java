@@ -2,6 +2,8 @@ package ExerciciosifElse;
 
 import java.util.Scanner;
 
+import javax.lang.model.util.ElementScanner14;
+
 public class Exercicios {
     Scanner sc = new Scanner (System.in);
     public void exercicio1 () {
@@ -44,37 +46,51 @@ public class Exercicios {
     }
 
     public void exercicio4 () {
-        System.out.println("Quantidade de Maça");
-        int Quantidade= sc.nextInt();
-        double valorMaça = 0.00;
-       //double valorMaça2 = 0.30;
-        //double valorCompra = Quantidade*valorMaça;
-        //double valorCompra2 = Quantidade*valorMaça2;
-        if (Quantidade==0.00);{
-            valorMaça=0.00;}
-
-        else if(Quantidade<=12){
-        valorMaça=0.25;
-    }
-    else{
-        valorMaça=0.30;
-    }
-       // if(Quantidade<=12);
-        System.out.println("O Valor da Sua Compra é");
-       // double valorMaça = 0.25;
-     //   double valorMaça2 = 0.30;
-        double valorCompra = Quantidade*valorMaça;
-        //double valorCompra2 = Quantidade*valorMaça2;
+        System.out.println("Quantidade de maças");
+        int quantidade = sc.nextInt();
+        double valorDesconto = 0.0;
+        if (quantidade == 0) {
+            valorDesconto = 0.0;
+        } else if (quantidade >= 12) {
+            valorDesconto = 0.25;
+        } else {
+            valorDesconto = 0.30;
+        }
+        double valorTotalDesconto = (quantidade * valorDesconto);
+        System.out.println("Valor da sua compra é" + valorTotalDesconto);
     }
 { 
     }
 
     public void exercicio5 () {
+        System.out.println("Informe o Primeiro Valor");
+        int n1 = sc.nextInt();
+        System.out.println("Informe o Segundo Valor");
+        int n2 = sc.nextInt();
+        System.out.println("Informe o Terceiro Valor");
+        int n3 = sc.nextInt();
+        //n1<n2<n3
+        if (n1<n2 && n2<n3){
+            System.out.println("A Ordem Crescente é"+n1+","+n2+" "+n3+);
+        
 
+        }
+
+
+
+
+        if (sexo == 1) { // caso seja feminino
+            pesoIdeal = 62.1 * altura - 44.7;
+        } else if (sexo == 2) { // caso seja masculino
+            pesoIdeal = 72.7 * altura - 58;
+        } else { // caso seja um valor inválido
+            System.out.println("Valor de sexo inválido!");
+            return; // encerra o programa
+        }
+
+        System.out.printf("Seu peso ideal é %.2f kg.", pesoIdeal);
     }
-
-    public void exercicio6 () {
-
-    }
-    
 }
+
+
+
